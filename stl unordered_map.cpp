@@ -6,12 +6,18 @@ int  main(){
         {"two",2},
         {"three",3}
     };
+
+    // Insert
+    umpp["four"] = 4;
+    umpp.insert({"five",5});
+
     cout << "Key - Value" << endl;
     for(const auto &it : umpp){
         string key = it.first;
         int value = it.second;
         cout << key << " - " << value << endl;
     }
+
     cout << endl;
     // Copy Map
     unordered_map <string,int> umpp2(umpp.begin(),umpp.end());
