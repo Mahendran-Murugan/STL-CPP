@@ -23,10 +23,20 @@ int  main(){
 
     //Find
     if(umpp.find("one") != umpp.end()){
-        cout << "The element present in Map" << endl;
+        cout << "The element present in Map" ;
     }else{
-        cout << "The element not present Map" << endl;
+        cout << "The element not present Map" ;
     }
+    cout << endl;
+
+    //Count
+    if(umpp.count("one")){
+        cout << "YES";
+    }else{
+        cout << "NO";
+    }
+
+    cout << endl;
 
     cout << "Key - Value" << endl;
     for(const auto &it : umpp){
