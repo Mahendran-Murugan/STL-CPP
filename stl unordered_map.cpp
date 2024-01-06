@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int  main(){
+    unordered_map <string,int> umpp {
+        {"one",1},
+        {"two",2},
+        {"three",3}
+    };
+    cout << "Key - Value" << endl;
+    for(const auto &it : umpp){
+        string key = it.first;
+        int value = it.second;
+        cout << key << " - " << value << endl;
+    }
+    return 0;
+}
