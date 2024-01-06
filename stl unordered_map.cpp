@@ -11,6 +11,9 @@ int  main(){
     umpp["four"] = 4;
     umpp.insert({"five",5});
 
+    // Insert two Pairs
+    umpp.insert({{"six",6},{"seven",7}});
+
     cout << "Key - Value" << endl;
     for(const auto &it : umpp){
         string key = it.first;
