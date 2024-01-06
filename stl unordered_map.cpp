@@ -21,6 +21,13 @@ int  main(){
     // Remove
     umpp.erase("seven");
 
+    //Find
+    if(umpp.find("one") != umpp.end()){
+        cout << "The element present in Map" << endl;
+    }else{
+        cout << "The element not present Map" << endl;
+    }
+
     cout << "Key - Value" << endl;
     for(const auto &it : umpp){
         string key = it.first;
